@@ -1,0 +1,6 @@
+# Download "alps-2.0.3-src-with-boost.tar.gz" from 
+# http://alps.comp-phys.org/mediawiki/index.php/Download_and_install_ALPS_2
+# unzip it (you do NOT need to build or install anything!)
+# and set the following variable to the path of the unzipped directory:
+ALPSDIR=.../alps-2.0.3-src-with-boost
+c++ -I${ALPSDIR}/boost -I${ALPSDIR}/alps/src -llapack -lblas -o skeleton skeleton.cpp
